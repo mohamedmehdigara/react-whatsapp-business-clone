@@ -1,18 +1,23 @@
 import React from 'react';
 import './App.css';
-import ChatList from './components/ChatList';
-import ChatWindow from './components/ChatWindow';
 import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import ChatWindow from './components/ChatWindow';
+import ChatList from './components/ChatList';
+import Message from './components/Message';
 
 const App = () => {
   return (
     <div className="app">
-      <Header/>
-      <div className="sidebar">
-        <ChatList />
-      </div>
+      <Header />
       <div className="main">
-        <ChatWindow />
+        <Sidebar />
+        <ChatList />
+        <ChatWindow>
+          <Message sender="John Doe" content="Hey, how are you?" timestamp="10:30 AM" />
+          <Message sender="Jane Smith" content="Can we meet tomorrow?" timestamp="Yesterday" />
+          <Message sender="David Johnson" content="Check out this link!" timestamp="2 days ago" />
+        </ChatWindow>
       </div>
     </div>
   );

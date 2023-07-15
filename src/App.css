@@ -13,3 +13,70 @@
   flex-grow: 1;
   padding: 20px;
 }
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #075e54;
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.app-name {
+  font-size: 1.2rem;
+}
+
+.navigation .nav-button {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.user-profile {
+  display: flex;
+  align-items: center;
+}
+
+.user-profile img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.chat-list {
+  overflow-y: auto;
+}
+
+.chat-item {
+  padding: 10px;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.contact-name {
+  font-weight: bold;
+}
+
+.last-message {
+  color: #777;
+}
+
+.timestamp {
+  font-size: 0.8rem;
+  color: #aaa;
+}
